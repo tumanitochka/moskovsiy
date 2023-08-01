@@ -26,6 +26,15 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -340,7 +349,7 @@ footer {
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    line-height: 16px; /* 133.333% */
+    line-height: 16px;
     text-decoration: none;
 }
 
@@ -357,8 +366,10 @@ footer {
 
 .copy {
     display: flex;
+    gap: 16px;
 }
 
 .pay {
     display: flex;
+    gap: 16px;
 }
