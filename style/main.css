@@ -126,7 +126,7 @@ li a {
 .setting {
     display: flex;
     justify-content: space-between;
-    margin: 0 40px;
+    margin: 0 30px;
     padding: 10px;
 }
 
@@ -142,16 +142,17 @@ li a {
 
 .catalog {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 40px;
+    gap: 6px;
 }
 
 .item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 1px #A4A4A4;
+    border: solid 1px #EBEBEB;
     width: 350px;
 }
 
@@ -198,4 +199,40 @@ li a {
     flex-direction: column;
     gap: 16px;
     margin-top: 8px;
+}
+
+.btnAdd {
+    margin: auto;
+    width: 1430px;
+}
+
+.btnAdd a{
+    display: flex;
+    padding: 24px 661px;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    border: solid 1px #EBEBEB;
+
+    color: #000;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.btnAdd span {
+    position: relative;
+    left: 20.5px;
+    top: 45px;
+
+    color: rgba(0, 0, 0, 0.40);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
