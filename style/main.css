@@ -252,6 +252,11 @@ footer {
     padding: 32px 0  0 40px;
 }
 
+.rssInput {
+    display: flex;
+    gap: 10px;
+}
+
 .rss a {
     color: #000;
     font-family: Manrope;
@@ -296,14 +301,21 @@ footer {
     border: none;
 }
 
-.rss div {
-    display: flex;
-    gap: 10px;
-}
-
-.foot {
+.footMav {
     display: flex;
     justify-content: space-around;
+    margin-top: 32px;
+    margin-left: 40px;
+}
+
+.footMav a {
+    color: #000;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    text-decoration: none;
 }
 
 .footItem {
@@ -312,4 +324,41 @@ footer {
     gap: 12px;
     width: 287px;
     height: 278px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.foot,
+.foot a {
+    color: #8C8C8C;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 133.333% */
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.socItem {
+    display: flex;
+    gap: 16px;
+}
+
+.copy {
+    display: flex;
+}
+
+.pay {
+    display: flex;
 }
