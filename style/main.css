@@ -236,3 +236,11 @@ li a {
     font-weight: 500;
     line-height: normal;
 }
+
+footer {
+    background: #F0F0F0;
+    width: 1512px;
+    height: 583px;
+    flex-shrink: 0;
+    margin: 81px auto 0;
+}
