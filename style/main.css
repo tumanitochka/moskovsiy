@@ -116,7 +116,9 @@ header input[type=radio]:hover {
     gap: 16px;
 }
 
-.ll 
+.ll:hover .nav-hover {
+    display: flex;
+}
 
 main {
     width: 1510px;
