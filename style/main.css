@@ -40,7 +40,6 @@ header {
     flex-direction: column;
 
     width: 1510px;
-    height: 200px;
     margin: auto;
 
     font-family: Jost;
@@ -91,11 +90,33 @@ header input[type=radio]:hover {
     text-decoration: none;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    &:hover {
+        border-bottom: 1px solid black;
+        transition: all 2s ease;
+    }
 }
 
 .nav a:last-child {
     color: red;
 }
+
+.nav-hover {
+    display: none;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #fff;
+    height: 300px;
+    margin: 24px 40px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ll 
 
 main {
     width: 1510px;
@@ -110,6 +131,7 @@ main {
 
 .breadcrumb {
     margin-left: 40px;
+    margin-top: 20px;
 }
 
 ul {
@@ -160,14 +182,31 @@ li a {
 .item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border: solid 1px #EBEBEB;
+    align-items: end;
     width: 350px;
+    padding: 10px;
+
+    &:hover {
+        box-shadow: 0px 34px 34px 0px rgba(0, 0, 0, 0.15);
+    }
 }
 
-.item img:first-child {
+.item:hover .heart {
     display: flex;
-    justify-content: center;
+}
+
+.heart {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.heart:active img:last-child {
+    background-image: url(../style/img/heart_selected.svg);
+}
+
+.item img:nth-child(2) {
     width: 350px;
     height: 420px;
 }
@@ -176,8 +215,8 @@ li a {
     text-align: center;
 }
 
-.item img:nth-child(2) {
-    margin-top: 16px;
+.item img:nth-child(3) {
+    margin: 16px auto;
     width: 80px;
     height: 30px;
 }
@@ -204,8 +243,7 @@ li a {
 }
 
 .ctgFoot {
-    display: flex;
-    flex-direction: column;
+    margin: auto;
     gap: 16px;
     margin-top: 8px;
 }
